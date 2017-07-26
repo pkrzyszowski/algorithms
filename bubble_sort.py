@@ -3,15 +3,12 @@ def bubbleSort(alist):
         for i in range(passnum):
             if alist[i]>alist[i+1]:
                 temp = alist[i]
-                print(temp)
                 alist[i] = alist[i+1]
-                print(alist[i])
                 alist[i+1] = temp
-                print(temp)
 
 alist = [54,26,93,17,77,31,44,55,20]
-# bubbleSort(alist)
-# print(alist)
+bubbleSort(alist)
+print(alist)
 
 def shortBubbleSort(alist):
     exchanges = True
@@ -22,11 +19,8 @@ def shortBubbleSort(alist):
            if alist[i]>alist[i+1]:
                exchanges = True
                temp = alist[i]
-               print(temp)
                alist[i] = alist[i+1]
-               print(alist[i])
                alist[i+1] = temp
-               print(temp)
        passnum = passnum-1
 
 alist=[20,30,40,90,50,60,70,80,100,110]
